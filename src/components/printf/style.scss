@@ -1,0 +1,17 @@
+.print-source {
+  display: none;
+}
+
+body > .print-source {
+  display: block;
+}
+
+@media print {
+  .print-source {
+    display: block;
+  }
+}
+
+.btn-print div button {
+  border-radius: 0 !important;
+}

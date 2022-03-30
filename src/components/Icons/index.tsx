@@ -1,0 +1,15 @@
+export {default as ContractIcon} from './ContractIcon';
+export {default as ProfilesIcon} from './ProfilesIcon';
+export {default as TimeManagementIcon} from './TimeManagementIcon';
+export {default as SalaryIcon} from './SalaryIcon';
+export {default as TaxIcon} from './TaxIcon';
+export {default as InsuranceIcon} from './InsuranceIcon';
+export {default as ProcessingProcedureIcon} from './ProcessingProcedureIcon';
+export {default as SystemIcon} from './SystemIcon';
+export {default as CategoryIcon} from './CategoryIcon';
+export {default as ReportIcon} from './ReportIcon';
+export {default as HomeIcon} from './HomeIcon';
+export {default as PhoneIcon} from './PhoneIcon';
+export {default as MailIcon} from './MailIcon';
+export {default as DeviceMobileIcon} from './DeviceMobile';
+export {default as PieChartOutlinedIcon} from './PieChartOutlined';

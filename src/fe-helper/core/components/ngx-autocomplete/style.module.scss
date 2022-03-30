@@ -1,0 +1,24 @@
+@import '../app/styles/variable';
+
+:global {
+  .auto-complete-content {
+    display: flex;
+    justify-content: space-around;
+
+    .text-header {
+      color: black;
+      font-style: normal;
+      font-weight: 600;
+      font-size: const(label, $constFontSize);
+    }
+  }
+
+  .text-option-autocomplete {
+    font-style: normal;
+    font-size: const(label, $constFontSize);
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    padding-right: 10px;
+    overflow: hidden;
+  }
+}

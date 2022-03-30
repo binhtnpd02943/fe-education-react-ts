@@ -1,0 +1,175 @@
+$color-white: #ffffff;
+$nb-item-hover: #3366ff;
+$nb-item-color: #1a2138;
+$line-height-formula: 1.5rem;
+$default-font-size: 0.8125rem;
+$default-font-weight: 500;
+$default-border-radius: 0.25rem;
+$input-info-background-color: #f7f9fc;
+$form-required-color: red;
+$language-color: #3366ff;
+$full-width: 100%;
+$label-color: #8f9bb3;
+$border: 1px solid #0095ff;
+$primary-button-bg: rgba(51, 103, 214, 0.9);
+$primary-button-bc: rgba(51, 103, 214, 0.2);
+$placeHolder-color: #999;
+$active-bg: #0095ff;
+$disable-cl: #94cbff;
+//table variable
+$table-ntn-child-background-color: #efeff8;
+$table-full-with: 100%;
+$filter-thread: drop-shadow(3px 5px 10px rgba(0, 104, 183, 0.2));
+$table-border: 1px solid #ddd;
+$table-th-td-color: #333333;
+$td-th-pad: 0.7em;
+$table-font-size: 0.7125rem;
+$row-selected-bg: rgba(51, 103, 214, 0.9);
+$tr-hover-bg: #ddd;
+$check-box-width: 1rem;
+$check-box-height: 1rem;
+
+
+$mt-custom-label: 3.4em;
+$mt-custom-header-button: 3.3em;
+
+$constCustomButton: (
+        bg: rgb(215, 66, 99),
+        btn-w: 15rem,
+        btn-h: 3.5rem,
+        border-r: 2.25rem
+);
+
+$constColor: (
+        link: rgba(16, 113, 207, 1),
+        title: rgba(51, 51, 51, 1),
+        opacity: rgba(255, 255, 255, 1),
+        sub-title: #555555,
+        header: #0068b7,
+        item: #666666,
+        primary: #042b82,
+);
+
+$constLetterSpace: (
+        tiny: 0.05rem,
+        small: 0.1rem,
+        medium: 0.3rem,
+        large: 0.5rem,
+        giant: 1rem,
+);
+$constBorderSize: (
+        tiny: 0.5rem,
+        small: 1rem,
+        medium: 2rem,
+        large: 3rem,
+        giant: 4rem,
+);
+$constIconSize: (
+        tiny: 0.5rem,
+        small: 1rem,
+        medium: 2rem,
+        large: 3rem,
+        giant: 4rem,
+);
+
+$constFont: (
+        default: 'Noto Sans JP',
+);
+
+$constFontSize: (
+        tiny: 0.7rem,
+        small: 0.95rem,
+        default: 0.95rem,
+        medium: 1.5125rem,
+        large: 3rem,
+        giant: 4rem,
+        headerFontSize: 0.9125rem,
+        breadcrumb: 0.85rem,
+        title: 1.15rem,
+        label: 0.8125rem,
+);
+
+$constLineHeight: (
+        tiny: 0.5rem,
+        small: 1rem,
+        medium: 1.5rem,
+        default: 2rem,
+        large: 3.5rem,
+        giant: 4rem,
+);
+
+$constFW: (
+        tiny: 300,
+        small: 400,
+        default: 500,
+        medium: 600,
+        large: 700,
+        giant: 800,
+);
+
+$constShadow: (
+        hover: rgba(0, 0, 0, 0.57),
+        custom: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
+);
+
+$constStatusColor: (
+        primary: #3366ff,
+        success: #00d68f,
+        info: #0095ff,
+        warning: #ffaa00,
+        danger: #ff3d71,
+);
+
+$constShape: (
+        rectangle: 0.25rem,
+        semi-round: 0.5rem,
+        round: 2rem,
+);
+
+$constWidth: (
+        tiny: 4rem,
+        small: 9rem,
+        medium: 12rem,
+        large: 15rem,
+        giant: 20rem,
+);
+
+$constHeight: (
+        tiny: 5rem,
+        small: 10rem,
+        medium: 15rem,
+        large: 20rem,
+        giant: 25rem,
+);
+
+$constHeightButton: (
+        tiny: 2rem,
+        small: 2.7rem,
+        medium: 5rem,
+        large: 7rem,
+        giant: 9rem,
+);
+
+$constPadLg: (
+        tiny: 1rem,
+        small: 2rem,
+        medium: 3rem,
+        large: 4rem,
+        giant: 5rem,
+);
+
+@function const($name, $const) {
+  @if not map-has-key($const, $name) {
+    @error 'Unknown constant `#{$name}`.';
+  }
+
+  @return map-get($const, $name);
+}
+
+@function calc-multi($number) {
+  @if not $number {
+    @error 'Unknown constant `#{$number}`.';
+  }
+
+  @return calc(100% * #{$number});
+}

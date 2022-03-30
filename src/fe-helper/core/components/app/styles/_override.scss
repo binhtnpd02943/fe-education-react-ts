@@ -1,0 +1,200 @@
+@import 'variable';
+
+@mixin ngx-override() {
+  :global {
+    .ant-layout {
+      overflow-x: hidden !important;
+
+      .ant-breadcrumb-link {
+        a {
+          font-style: normal;
+          font-weight: normal;
+          font-size: const(breadcrumb, $constFontSize);
+          color: rgb(33, 111, 237);
+          line-height: const(small, $constLineHeight);
+        }
+      }
+
+      .scrollable-container::-webkit-scrollbar {
+        width: .3125rem;
+        height: .3125rem;
+      }
+      .scrollable-container::-webkit-scrollbar-thumb {
+        background: #e4e9f2;
+        cursor: pointer;
+        border-radius: .15625rem;
+      }
+      .scrollable-container::-webkit-scrollbar-track {
+        background: #f7f9fc;
+      }
+    }
+    .ant-dropdown {
+      .ant-card-body {
+        overflow-y: auto;
+        max-height: 40vh;
+      }
+    }
+
+    .ant-btn {
+      .anticon {
+        margin-right: 0.5rem;
+        font-size: 1.125rem;
+      }
+    }
+    .ant-btn-icon-only {
+      .anticon {
+        margin: auto;
+      }
+    }
+    .ant-table {
+
+      .ant-table-content {
+        position: relative !important;
+      }
+
+      table {
+        position: relative;
+      }
+    }
+
+    .ant-layout-content {
+      border: none !important;
+    }
+
+    .ant-card-bordered {
+      border: 1px solid rgb(189, 199, 215) !important;
+      border-radius: 0.35rem !important;
+
+      .ant-card-meta-title {
+        color: rgb(41, 55, 79);
+        font-style: normal;
+        font-size: const(medium, $constFontSize);
+        font-weight: bold;
+      }
+
+      .ant-card-meta-avatar {
+        margin-top: const(tiny, $constPadLg) - 0.5rem;
+      }
+
+      .ant-card-meta-description {
+        color: rgb(118, 134, 162);
+        font-style: normal;
+        font-weight: const(medium, $constFW);
+        font-size: 0.8125rem;
+        line-height: const(small, $constLineHeight);
+        text-transform: uppercase;
+        margin-top: -0.35rem;
+      }
+
+      .screen-name {
+        color: rgb(41, 55, 79);
+        line-height: const(small, $constLineHeight);
+        font-size: const(title, $constFontSize);
+        font-weight: const(medium, $constFW);
+        font-style: normal;
+      }
+    }
+
+    .ant-form-item {
+      .ant-form-item-label {
+        .ant-space-item {
+          color: rgb(41, 55, 79);
+          line-height: const(tiny, $constLineHeight);
+          font-weight: normal;
+        }
+      }
+
+      .ant-form-item-control {
+        .ant-form-item-control-input {
+          .ant-input, .ant-picker,
+          .ant-form-item-control-input-content,
+          .ant-input-affix-wrapper,
+          .ant-input-number-input-wrap,
+          .ant-input-number  {
+            box-sizing: border-box;
+            border-radius: 0.25rem;
+            line-height: 1.5rem;
+            width: 100%;
+            border-width: 1px;
+            -webkit-appearance: none;
+            transition-duration: 0.15s;
+            transition-property: border, background-color, color, box-shadow;
+            transition-timing-function: ease-in;
+          }
+
+          .ant-select {
+            .ant-select-selector {
+              border-width: 1px;
+              border-radius: 0.25rem;
+              //padding: 0rem 1.125rem;
+              width: 100%;
+              line-height: 1.5rem;
+              height: 2.15rem;
+              font-size: const(label, $constFontSize);
+            }
+          }
+        }
+      }
+    }
+
+    .ant-table-content {
+      margin-top: 0.5rem;
+
+      .ant-table-thead {
+        th {
+          background-color: rgb(244, 247, 252) !important;
+          color: rgb(41, 55, 79);
+          font-weight: const(medium, $constFW);
+          font-style: normal;
+          line-height: const(medium, $constLineHeight);
+          font-size: const(label, $constFontSize) + 0.04rem;
+          letter-spacing: 0.015rem;
+        }
+      }
+
+      th, td {
+        padding: 0.54rem;
+
+        .ant-checkbox-inner {
+          border: 1px solid rgb(111, 128, 158) !important;
+        }
+      }
+
+      tbody {
+        tr:nth-child(even) {
+          td {
+            background-color: rgb(244, 247, 252) !important;
+          }
+
+        }
+
+        td {
+          color: rgb(41, 55, 79);
+          font-style: normal;
+          font-weight: 450;
+          font-size: 0.8125rem !important;
+          line-height: const(small, $constLineHeight) + 0.25rem;
+          border: none !important;
+        }
+      }
+
+      .ant-table-row-selected {
+        td {
+          background: none !important;
+        }
+      }
+    }
+    .ant-btn-medium {
+      background-color: rgb(244, 247, 252) !important;
+      border-radius: 0.35rem !important;
+      font-family: Inter, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 0.8525rem;
+    }
+    .ant-modal-body {
+      overflow-y: auto;
+      max-height: 85vh;
+    }
+  }
+}
