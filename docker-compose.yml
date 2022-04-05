@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    container_name: fe-education-react-app
+    image: fe-education-react-app
+    build:
+      context: .
+    volumes:
+      - ./src:/usr/src/app/src
+    ports:
+      - "3000:3000"

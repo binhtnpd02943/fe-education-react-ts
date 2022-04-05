@@ -22,16 +22,16 @@ export default function ScreenDashboard() {
     <Sidebar>
       {/* Statistic Section */}
       <Row gutter={16} className="mb-5">
-        <Col span={6}>
+        <Col xs={24} md={12} lg={6}>
           <StatisticItem icon={<TeamOutlined />} label="male" value={statistics.maleCount} />
         </Col>
-        <Col span={6}>
+        <Col xs={24} md={12} lg={6}>
           <StatisticItem icon={<TeamOutlined />} label="female" value={statistics.femaleCount} />
         </Col>
-        <Col span={6}>
+        <Col xs={24} md={12} lg={6}>
           <StatisticItem icon={<TeamOutlined />} label="mark >= 8" value={statistics.highMarkCount} />
         </Col>
-        <Col span={6}>
+        <Col xs={24} md={12} lg={6}>
           <StatisticItem icon={<TeamOutlined />} label="mark <= 5" value={statistics.lowMarkCount} />
         </Col>
       </Row>
